@@ -38,4 +38,4 @@ else:
 
 
 cal = calendar.TextCalendar(6)
-cal.prmonth(int(year),int(month));
+cal.prmonth(int(year),int(month))
