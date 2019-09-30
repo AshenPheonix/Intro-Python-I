@@ -11,7 +11,7 @@ changeX()
 
 # This prints 12. What do we have to modify in changeX() to get it to print 99?
 print(x)
-
+#add in a call to make x global
 
 # This nested function has a similar problem.
 
@@ -25,6 +25,7 @@ def outer():
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999? Google "python nested function scope".
+    # We need to add in "nonlocal" keyword to get this to work the way requested
     print(y)
 
 outer()
