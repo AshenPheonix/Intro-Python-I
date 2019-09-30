@@ -22,3 +22,20 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+args = sys.argv
+if len(args)==3:
+  month=args[1]
+  year=args[2]
+elif len(args)==2:
+  month=args[1]
+  year=datetime.today().date().year
+elif len(args)==1:
+  month=datetime.today().date().month
+  year=datetime.today().date().year
+else:
+  print("Please enter the program name, then month, then year. No additioanl information is to be given")
+
+
+cal = calendar.TextCalendar(6)
+cal.prmonth(int(year),int(month));
